@@ -1,6 +1,14 @@
 # AI safety cost-effectiveness
 
-This repository contains code for estimating the cost-effectiveness of various field-building programs. It has been built for the [Center for AI Safety](https://www.safe.ai/).
+This repository contains code for estimating the cost-effectiveness of various field-building programs. It has been built for the [Center for AI Safety](https://www.safe.ai/). **This is a fork to estimate the cost effectiveness of Apart Research's programs:**
+
+- [Alignment Jam hackathons](https://alignmentjam.com)
+- [Apart Labs program](https://apartresearch.com)
+- [Apart YouTube channel (talks)](https://youtube.com/@apartresearch)
+- [Apart's AI safety newsletter (YouTube, newsletter, podcast)](https://news.apartresearch.com)
+- [AI Safety Ideas](https://aisi.ai)
+
+Each of these will be evaluated in turn. Earlier points have higher priority.
 
 ## Using this repository
 
@@ -17,10 +25,10 @@ If you would like assistance with this repo and/or your own evaluations, contact
 ## Directory Structure
 
 - `src`: Contains source code.
-    - `models`: Contains cost-effectiveness models, the main logic of this project.
-    - `parameters`: Contains parameter instances for each program evaluated. (The [parameters README](/src/parameters/README.md) describes what we mean by instances.)
-    - `scripts`: Contains scripts for generating outputs. Organized into subdirectories for `examples` of how to use the repository, and code used to generate content for written `posts`.
-    - `utilities`: Contains functions and assumptions that are common across multiple cost-benefit analyses. Organized into subdirectories for `assumptions`, `defaults`, `functions`, `plotting`, and `sampling`.
+  - `models`: Contains cost-effectiveness models, the main logic of this project.
+  - `parameters`: Contains parameter instances for each program evaluated. (The [parameters README](/src/parameters/README.md) describes what we mean by instances.)
+  - `scripts`: Contains scripts for generating outputs. Organized into subdirectories for `examples` of how to use the repository, and code used to generate content for written `posts`.
+  - `utilities`: Contains functions and assumptions that are common across multiple cost-benefit analyses. Organized into subdirectories for `assumptions`, `defaults`, `functions`, `plotting`, and `sampling`.
 - `output`: Contains data and plot outputs generated from `scripts`.
 
 The `scripts` feed `parameters` into `models` to produce `output`s. The `utilities` are used at many different stages of the project -- providing functions for specifying parameters, lower-level functions for models, sampling functions for the scripts, plotting functions for the outputs, and more.
